@@ -1,0 +1,34 @@
+{
+  "name": "decentralised-identity-system",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Thesis project: a decentralised identity system using DIDs and Verifiable Credentials anchored on Ethereum.",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "test:gas": "REPORT_GAS=true hardhat test",
+    "node": "hardhat node",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "seed:local": "hardhat run scripts/seed.js --network localhost",
+    "backend": "npm --prefix backend run dev",
+    "frontend": "npm --prefix frontend run dev",
+    "bench:chain": "hardhat run benchmarks/chain.js",
+    "bench:ipfs": "node benchmarks/ipfs.js",
+    "bench:auth": "node benchmarks/auth.js",
+    "bench:e2e": "hardhat run benchmarks/e2e.js",
+    "bench:report": "node benchmarks/report.js",
+    "bench:keygen": "node benchmarks/keygen.js",
+    "bench": "npm run bench:chain && npm run bench:auth && npm run bench:ipfs && npm run bench:e2e && npm run bench:report && npm run bench:keygen"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ignition": "^0.15.16",
+    "@nomicfoundation/hardhat-toolbox": "^6.1.2",
+    "chai": "^4.4.1",
+    "dotenv": "^16.4.5",
+    "hardhat": "^2.29.1"
+  },
+  "allowScripts": {
+    "keccak@3.0.4": true,
+    "secp256k1@4.0.5": true
+  }
+}

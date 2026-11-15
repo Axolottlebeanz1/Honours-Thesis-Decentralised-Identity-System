@@ -1,0 +1,534 @@
+{
+  "suite": "e2e",
+  "startedAt": "2026-11-10T12:59:09.606Z",
+  "finishedAt": "2026-11-10T12:59:11.114Z",
+  "meta": {
+    "node": "v24.21.0",
+    "platform": "win32 10.0.26200 (x64)",
+    "cpu": "AMD Ryzen 7 5800X 8-Core Processor             ",
+    "cpuCount": 16,
+    "memGB": 17.1,
+    "network": "hardhat",
+    "N": 10,
+    "ipfsApi": "http://127.0.0.1:5001"
+  },
+  "metrics": {
+    "did.1_encryptAndPin": {
+      "unit": "ms",
+      "note": "",
+      "n": 10,
+      "min": 11.4055,
+      "max": 590.9216,
+      "mean": 69.85933,
+      "median": 11.8911,
+      "p95": 590.9216,
+      "p99": 590.9216,
+      "stddev": 183.08304634098005,
+      "samples": [
+        590.9216,
+        12.7004,
+        11.8483,
+        11.4055,
+        11.6285,
+        11.8911,
+        12.4541,
+        12.1496,
+        11.5842,
+        12.01
+      ]
+    },
+    "did.2_registerOnChain": {
+      "unit": "ms",
+      "note": "",
+      "n": 10,
+      "min": 4.7525,
+      "max": 10.5829,
+      "mean": 6.28618,
+      "median": 5.677,
+      "p95": 10.5829,
+      "p99": 10.5829,
+      "stddev": 1.602460718048617,
+      "samples": [
+        4.7525,
+        10.5829,
+        6.3039,
+        6.1659,
+        5.4854,
+        6.2919,
+        5.5871,
+        5.4482,
+        5.677,
+        6.567
+      ]
+    },
+    "did.2_registerOnChain.gas": {
+      "unit": "gas",
+      "note": "",
+      "n": 10,
+      "min": 251129,
+      "max": 251129,
+      "mean": 251129,
+      "median": 251129,
+      "p95": 251129,
+      "p99": 251129,
+      "stddev": 0,
+      "samples": [
+        251129,
+        251129,
+        251129,
+        251129,
+        251129,
+        251129,
+        251129,
+        251129,
+        251129,
+        251129
+      ]
+    },
+    "did.3_resolveOnChain": {
+      "unit": "ms",
+      "note": "",
+      "n": 10,
+      "min": 0.5521,
+      "max": 2.7239,
+      "mean": 0.9610199999999999,
+      "median": 0.7427,
+      "p95": 2.7239,
+      "p99": 2.7239,
+      "stddev": 0.6391895368355148,
+      "samples": [
+        2.7239,
+        1.1487,
+        0.7427,
+        0.8167,
+        0.8232,
+        0.7732,
+        0.6522,
+        0.5521,
+        0.6731,
+        0.7044
+      ]
+    },
+    "did.4_fetchAndDecrypt": {
+      "unit": "ms",
+      "note": "",
+      "n": 10,
+      "min": 1.4089,
+      "max": 2.4069,
+      "mean": 1.76279,
+      "median": 1.6062,
+      "p95": 2.4069,
+      "p99": 2.4069,
+      "stddev": 0.3056577877663551,
+      "samples": [
+        2.4069,
+        1.9818,
+        1.8667,
+        1.774,
+        1.994,
+        1.5526,
+        1.6062,
+        1.5078,
+        1.529,
+        1.4089
+      ]
+    },
+    "did.TOTAL_registerToResolve": {
+      "unit": "ms",
+      "note": "pin + tx + resolve + fetch/decrypt",
+      "n": 10,
+      "min": 19.4789,
+      "max": 600.8959,
+      "mean": 78.89511999999999,
+      "median": 20.3159,
+      "p95": 600.8959,
+      "p99": 600.8959,
+      "stddev": 183.42333815430476,
+      "samples": [
+        600.8959,
+        26.4408,
+        20.7876,
+        20.1782,
+        19.9472,
+        20.5264,
+        20.3159,
+        19.6733,
+        19.4789,
+        20.707
+      ]
+    },
+    "vc.1_buildAndHash": {
+      "unit": "ms",
+      "note": "",
+      "n": 10,
+      "min": 0.0408,
+      "max": 1.3204,
+      "mean": 0.17656,
+      "median": 0.0417,
+      "p95": 1.3204,
+      "p99": 1.3204,
+      "stddev": 0.40207604366449,
+      "samples": [
+        1.3204,
+        0.071,
+        0.0676,
+        0.0409,
+        0.0408,
+        0.0417,
+        0.0417,
+        0.0412,
+        0.0427,
+        0.0576
+      ]
+    },
+    "vc.2_issuerSignsHash": {
+      "unit": "ms",
+      "note": "",
+      "n": 10,
+      "min": 0.1493,
+      "max": 0.4292,
+      "mean": 0.19601,
+      "median": 0.1565,
+      "p95": 0.4292,
+      "p99": 0.4292,
+      "stddev": 0.08854384287521698,
+      "samples": [
+        0.4292,
+        0.1602,
+        0.1493,
+        0.1513,
+        0.1561,
+        0.2599,
+        0.1519,
+        0.1565,
+        0.1576,
+        0.1881
+      ]
+    },
+    "vc.3_encryptAndPinSigned": {
+      "unit": "ms",
+      "note": "",
+      "n": 10,
+      "min": 10.3429,
+      "max": 12.363,
+      "mean": 11.296909999999999,
+      "median": 11.3567,
+      "p95": 12.363,
+      "p99": 12.363,
+      "stddev": 0.5957699564429206,
+      "samples": [
+        12.363,
+        11.2829,
+        11.4056,
+        10.3429,
+        11.9409,
+        10.8544,
+        11.3567,
+        11.3669,
+        10.5966,
+        11.4592
+      ]
+    },
+    "vc.4_registerHashOnChain": {
+      "unit": "ms",
+      "note": "",
+      "n": 10,
+      "min": 1.3542,
+      "max": 1.6506,
+      "mean": 1.4725300000000001,
+      "median": 1.4276,
+      "p95": 1.6506,
+      "p99": 1.6506,
+      "stddev": 0.09402440640599653,
+      "samples": [
+        1.6506,
+        1.4232,
+        1.4189,
+        1.4276,
+        1.3595,
+        1.3542,
+        1.4948,
+        1.5278,
+        1.5701,
+        1.4986
+      ]
+    },
+    "vc.4_registerHashOnChain.gas": {
+      "unit": "gas",
+      "note": "",
+      "n": 10,
+      "min": 78309,
+      "max": 78309,
+      "mean": 78309,
+      "median": 78309,
+      "p95": 78309,
+      "p99": 78309,
+      "stddev": 0,
+      "samples": [
+        78309,
+        78309,
+        78309,
+        78309,
+        78309,
+        78309,
+        78309,
+        78309,
+        78309,
+        78309
+      ]
+    },
+    "vc.5_fetchAndDecrypt": {
+      "unit": "ms",
+      "note": "",
+      "n": 10,
+      "min": 1.2344,
+      "max": 1.443,
+      "mean": 1.3670199999999997,
+      "median": 1.4026,
+      "p95": 1.443,
+      "p99": 1.443,
+      "stddev": 0.07892781230691472,
+      "samples": [
+        1.3367,
+        1.4183,
+        1.4218,
+        1.2497,
+        1.4026,
+        1.2344,
+        1.3072,
+        1.4332,
+        1.4233,
+        1.443
+      ]
+    },
+    "vc.6_verifyProofAndChain(valid)": {
+      "unit": "ms",
+      "note": "",
+      "n": 10,
+      "min": 2.3829,
+      "max": 21.4505,
+      "mean": 4.59464,
+      "median": 2.5264,
+      "p95": 21.4505,
+      "p99": 21.4505,
+      "stddev": 5.9439077441995645,
+      "samples": [
+        21.4505,
+        2.5264,
+        2.5173,
+        2.474,
+        2.7029,
+        2.3829,
+        2.4479,
+        4.1136,
+        2.6091,
+        2.7218
+      ]
+    },
+    "vc.7_revokeOnChain": {
+      "unit": "ms",
+      "note": "",
+      "n": 10,
+      "min": 0.9438,
+      "max": 1.7784,
+      "mean": 1.14492,
+      "median": 1.0471,
+      "p95": 1.7784,
+      "p99": 1.7784,
+      "stddev": 0.2468915497406368,
+      "samples": [
+        1.2203,
+        1.2113,
+        1.091,
+        1.2048,
+        1.7784,
+        0.9649,
+        1.0471,
+        0.9576,
+        1.03,
+        0.9438
+      ]
+    },
+    "vc.7_revokeOnChain.gas": {
+      "unit": "gas",
+      "note": "",
+      "n": 10,
+      "min": 51348,
+      "max": 51348,
+      "mean": 51348,
+      "median": 51348,
+      "p95": 51348,
+      "p99": 51348,
+      "stddev": 0,
+      "samples": [
+        51348,
+        51348,
+        51348,
+        51348,
+        51348,
+        51348,
+        51348,
+        51348,
+        51348,
+        51348
+      ]
+    },
+    "vc.8_verifyOnChain(revoked)": {
+      "unit": "ms",
+      "note": "",
+      "n": 10,
+      "min": 0.3732,
+      "max": 0.5362,
+      "mean": 0.4272,
+      "median": 0.3958,
+      "p95": 0.5362,
+      "p99": 0.5362,
+      "stddev": 0.05408830228842874,
+      "samples": [
+        0.4854,
+        0.3958,
+        0.427,
+        0.3922,
+        0.5362,
+        0.3849,
+        0.4349,
+        0.3732,
+        0.466,
+        0.3764
+      ]
+    },
+    "vc.TOTAL_issueVerifyRevoke": {
+      "unit": "ms",
+      "note": "",
+      "n": 10,
+      "min": 19.5469,
+      "max": 43.2949,
+      "mean": 22.961879999999997,
+      "median": 20.6225,
+      "p95": 43.2949,
+      "p99": 43.2949,
+      "stddev": 7.209381461802238,
+      "samples": [
+        43.2949,
+        20.7552,
+        20.6225,
+        19.5469,
+        22.2405,
+        19.6119,
+        20.4478,
+        22.4246,
+        20.0122,
+        20.6623
+      ]
+    }
+  },
+  "values": {
+    "vc.hasProofField": {
+      "value": true,
+      "unit": ""
+    },
+    "limitation.credentialCidOffChainOnly": {
+      "value": "Credential IPFS CIDs are indexed in MongoDB only, not on chain (only DID CIDs are on chain). The 'on chain CID matches IPFS document' check (E1/E2) therefore applies to DID documents; credentials are anchored by hash and verified by signature + hash.",
+      "unit": ""
+    },
+    "limitation.serverHeldKey": {
+      "value": "A single backend-held AES key protects off-chain data; the backend is a trusted component for confidentiality (not for credential validity).",
+      "unit": ""
+    }
+  },
+  "checks": [
+    {
+      "id": "E1",
+      "category": "integration",
+      "description": "CID stored on chain matches the CID returned by IPFS (10x)",
+      "expected": "10/10",
+      "actual": "10/10",
+      "pass": true
+    },
+    {
+      "id": "E2",
+      "category": "integration",
+      "description": "DID document retrieved from IPFS matches the original after decryption (10x)",
+      "expected": "10/10",
+      "actual": "10/10",
+      "pass": true
+    },
+    {
+      "id": "E3",
+      "category": "integration",
+      "description": "signed credential can be retrieved and verified (10x)",
+      "expected": "10/10",
+      "actual": "10/10",
+      "pass": true
+    },
+    {
+      "id": "E4",
+      "category": "integration",
+      "description": "credential is valid before revocation and revoked afterwards (10x)",
+      "expected": "10/10",
+      "actual": "10/10",
+      "pass": true
+    },
+    {
+      "id": "E5",
+      "category": "integration",
+      "description": "credential hash stays the same after copying and signing (20x)",
+      "expected": "20/20",
+      "actual": "20/20",
+      "pass": true
+    },
+    {
+      "id": "E5b",
+      "category": "security",
+      "description": "credential signature matches the issuer's address (10x)",
+      "expected": "10/10",
+      "actual": "10/10",
+      "pass": true
+    },
+    {
+      "id": "E5c",
+      "category": "security",
+      "description": "edited credential is rejected when using the original signature (10x)",
+      "expected": "10/10",
+      "actual": "10/10",
+      "pass": true
+    },
+    {
+      "id": "E6",
+      "category": "integration",
+      "description": "same credential data produces the same hash regardless of key order",
+      "expected": "equal",
+      "actual": "equal",
+      "pass": true
+    },
+    {
+      "id": "E7",
+      "category": "security",
+      "description": "changing a credential claim produces a different hash that is not registered on chain",
+      "expected": "not issued",
+      "actual": "not issued",
+      "pass": true
+    },
+    {
+      "id": "E7b",
+      "category": "security",
+      "description": "credential signed by someone other than the issuer is rejected",
+      "expected": "proofValid=false",
+      "actual": "proofValid=false",
+      "pass": true
+    },
+    {
+      "id": "E7c",
+      "category": "security",
+      "description": "credential without an on chain registration is rejected",
+      "expected": "issued=false",
+      "actual": "issued=false",
+      "pass": true
+    }
+  ],
+  "checkTotals": {
+    "total": 11,
+    "passed": 11,
+    "failed": 0
+  }
+}
